@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+<!--    <link rel="stylesheet" href="tpcss.css">-->
+    <style>
+    .container{
+    background: url(img/img/client/client-1.jpg) top left no-repeat;
+    background: blue;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.innerdiv{
+    width: 500px;
+    height:250px;
+    position: absolute;
+    display: none;
+    top: 250px;
+    background: rgba(0,0,0,0.8);
+    left: 0;
+    overflow: none;
+    border-top-left-radius:40%;
+    border-top-right-radius: 40%;
+}
+@keyframes slideup{
+    from{height:0;top: 500px;}
+    to{height:250px; top: 250px;}
+}
+.container:hover .innerdiv{
+    animation: slideup 0.5s 1;
+    display: block;
+    overflow: none;
+}
+
+.innerdiv p{
+    color: cyan;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="innerdiv animated fadeInUp text-center">
+            <p>An inner-div</p>
+        </div>
+    </div>
+    
+    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
+
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendors/jquery%20ui/jquery-ui.js"></script>
+<!--    <script src="tp.js"></script>-->
+</body>
+</html>

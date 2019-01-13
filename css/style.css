@@ -1,0 +1,686 @@
+/*===========================================================================================================
+PROJECT NAME    :    WHITE GRAPHICS
+FONT USED : ROBOTO CONDENSED
+COLORS USED IN WEBSITE
+MEDIUM TURQUOISE : #34C6D3 (BUTTONS ,ICONS ,LINKS,LINES,BACKGROUND)
+STEEL GRAY: #41464B (HEADINGS)
+BLUE BAYOUX : #64707B (PARAGRAPHS)
+WHITE : #FFF (TEXT WITH DARKER BACKGROUND)
+BLACK:#000 (FOR HOVER AND SOME PLACES)
+
+============================================================================================================*/
+
+
+/*===========================================================================================================
+        FONT COLOR SETTINGS
+============================================================================================================*/
+.text-heading{
+    color: #41464B;
+    text-transform: uppercase;
+}
+.text-content{
+    color: #64707B;
+    font-weight: 300px;
+}
+
+
+/*===========================================================================================================
+        PARALLAX IMAGE
+============================================================================================================*/
+.bg-parallax{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*===========================================================================================================
+        GENERAL BUTTON CSS
+============================================================================================================*/
+.btn-general{
+    border: solid 2px #fff;
+    border-radius: 0;
+    padding: 12px 26px;
+    text-transform: uppercase;
+/*    font-weight: bold;*/
+    
+}
+.btn-white{
+    color: #fff;
+    border-color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus{
+    background: #fff;
+    color: #41464B;
+}
+.btn-blue{
+    color: #34C6D3;
+    border-color: #34C6D3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus{
+    background: #34C6D3;
+    color: #41464B;
+}
+
+.bottom-margin{
+    padding-bottom: 30px;
+}
+
+/*===========================================================================================================
+        GENERAL CSS
+============================================================================================================*/
+html,body{
+    height: 100%
+}
+
+body{
+    font-family: 'Roboto Condensed',sans-serif;
+    
+}
+
+
+.home-section{
+    height: 100%;
+    
+}
+
+.home-cover{
+    background-image: url('../img/bg-home.jpg');
+    height: 100%;
+    
+}
+
+.home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+    
+}
+
+.home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.home-section .text-heading{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+   
+}
+
+
+/*CSS TO ANIMATE THINGS IN HOME SECTION*/
+
+.home-cover,
+.text-heading,
+.home-btn{
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+}
+.home-cover{
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
+}
+
+.text-heading{
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+    
+}
+
+.home-btn{
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+.text-heading-white{
+    color: #fff;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+}
+
+/*===========================================================================================================
+    CONTENT BOX CSS
+============================================================================================================*/
+
+.content-box{
+    padding: 60px 0;
+
+}
+.content-title .text-heading{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 30px;
+    
+}
+
+.content-title .content-title-underline{
+      width: 30px;
+    height: 2px;
+    background: #34c6d3;
+    margin: 0 auto 30px;
+    
+}
+
+
+/*===========================================================================================================
+        SERVICE SECION CSS
+============================================================================================================*/
+
+.service-item{
+    padding: 20px 0;
+    margin: 0 0 20px;
+    cursor: pointer;
+}
+
+.service-item-icon .fa{
+    color:#34c6d3; 
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.service-item:hover .service-item-icon .fa{
+    color: #FFF;
+    background: #34C6D3;
+}
+
+.service-item-title .text-heading{
+    font-size: 20px;
+    font-weight:400;
+    margin: 0 0 10px;
+}
+
+.service-item-desc p{
+    margin: 0;
+    padding-left: 100px;
+}
+
+/*===========================================================================================================
+        ABOUT SECTION CSS
+============================================================================================================*/
+
+.about-content-box{
+    float: left;
+    height: 700px; /*image will also have same height*/
+    
+}
+.about-content-box-outer{
+    display: table;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about-btn{
+    text-align: center;
+}
+
+.about-bg-diagonal{
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url('../MYimg/bruce-mars-548713-unsplash.jpg');
+    border-top:solid 700px transparent;
+    border-left:solid 200px white;
+    
+    
+}
+
+.row.no-gutters [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+.img-wrapper img{
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.img-wrapper img:hover{
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+/*=======================================================================================================
+OUR TEAM CSS
+======================================================================================================*/
+
+.team-member{
+    margin: 0 15px;
+    
+}
+.team-members{
+    width: 100%;
+}
+
+.team-member-info{
+    padding: 10px 0 30px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+.h4.team-member-name{
+    color: #34c6d3;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+
+/*=======================================================================================================
+SOCIAL ICON CSS
+======================================================================================================*/
+
+.social-list{
+    padding-left: 0;
+}
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+    
+}
+
+.social-icon i{
+    font-size: 17px;
+}
+
+.icon-gray{
+    color: #64707b;
+}
+
+.icon-white{
+    color: #fff;
+}
+
+.icon-facebook:hover{
+    color: #3c589e;
+}
+
+.icon-twitter:hover{
+    color: #5eaade;
+}
+.icon-google-plus:hover{
+    color: #b93425;
+}
+
+.icon-youtube:hover{
+    color: #ee1c1b;
+}
+
+.cover{
+    background: url('../img/bg-testimonials.jpg') top left no-repeat;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    
+    
+}
+
+.cover-text{
+    display: table-cell;
+    vertical-align: middle; 
+    color: white;
+    padding:250px;
+    text-align: center;
+}
+
+.cover-text img{
+
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.client-image img{
+    margin-left: 320px;
+}
+
+.content-box1{
+    padding: 60px 0;
+    background: url('../img/bg-testimonials.jpg');
+    background-size: cover;
+}
+
+
+/*=======================================================================================================
+SOCIAL ICON CSS
+======================================================================================================*/
+
+.pricing-box{
+    text-align: center;
+    border: solid 3px #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+h4.pricing-title{
+    background-color: #34c6d3;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+h3.pricing-value{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.pricing-value sup{
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: super;
+}
+
+ul.pricing-spec{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px;
+}
+
+ul.pricing-spec li p{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.pricing-box-lg{
+    padding: 90px 0;
+    margin: 0;
+    background-color: #34c6d3;
+}
+
+.pricing-box-lg h4.pricing-title{
+    color: #34c6d3;
+    background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-spec li p{
+    color: #fff;
+}
+
+/*=======================================================================================================
+TESTIMONIAL CSS
+==============================================================================================*/
+
+.testimonial-cover{
+    background-image: url("../img/bg-testimonials.jpg");
+}
+
+.customers-testimonials{
+    padding: 50px 0;
+}
+
+.testimonial{
+    margin-bottom: 30px;
+}
+
+.testimonial img{
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.testimonial blockquote{
+    border: 0;
+    color: #fff;
+    text-align: center;
+    padding: 6px 150px;
+    font-family: Georgia,Times,serif;
+    font-style: italic;
+    font-size: 16px;
+    position: relative;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after{
+    font-size: 80px;
+    position: absolute;
+    font-style: normal;
+    line-height: 1;
+/*    left:100;*/
+    width: 30px;
+    height: 30px;
+    
+}
+
+.testimonial blockquote:before{
+    content: "\201C";
+    top: 0;
+    left:100;
+}
+
+.testimonial blockquote:after{
+    content:"\201D";
+    bottom: 0;
+    right: 100;
+}
+
+.testimonial-author{
+    text-align: center;
+    
+}
+
+.testimonial-author p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.testimonial-author p strong{
+    display: block;
+}
+
+/*=================================================================================================================
+                                        stats section css
+=================================================================================================================*/
+.stats-cover{
+    background-image: url("../img/bg-stats.jpg");
+}
+.stats-cover .content-box{
+    background: rgba(0,0,0,0.8);
+    
+}
+.stats-item{
+    padding: 100px 0;
+    text-align: center;
+}
+.stats-item i{
+    color: #34c6d3;
+}
+.stats-item h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+.stats-item p{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1px;
+    font-weight: 300;
+    font-size: 16px;
+}
+/*=================================================================================================================
+                                        clients section css
+=================================================================================================================*/
+.client{
+    padding: 40px 0;
+}
+
+/*=================================================================================================================
+                                        footer section css
+=================================================================================================================*/
+footer{
+    background-color: #41464b;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+footer p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.contact-left h3,
+.contact-right h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+.contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.contact-info{
+    background: url(../);
+    background-size: contain;
+}
+address{
+    color: #fff;
+}
+address strong,
+.phone-fax-email strong{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.form-control{
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border-color: #fff;
+}
+
+.navbar{
+    padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-inverse{
+    background-color: transparent;
+    border: none;
+/*    padding: 7px 0;*/
+}
+.wg-top-navbar{
+    background: rgba(0,0,0,0.7);
+    padding: 7px 0;
+}
+
+.wg-nav-wrapper{
+    padding: 0 8px;
+}
+.navbar-nav{
+    float: right;
+}
+.navbar-inverse .navbar-nav li a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    
+}
+
+.navbar-inverse .navbar-nav li a:hover,
+.navbar-inverse .navbar-nav li a:focus
+{
+    color: #34C6D3;
+    background: none;
+}
+.navbar-collapse{
+    max-height: none!important;
+}
+.navbar-inverse .navbar-nav li.active a:hover,
+.navbar-inverse .navbar-nav li.active a:focus{
+    color: #34C6D3;
+    background: none;
+}
+
+.navbar-inverse .navbar-nav li.active a{
+    
+    background: none;
+    color: #34C6D3;
+}
+
+.imageinside{
+    width: 150px;
+    height: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    -ms-flex-negative: 22px;
+        flex-shrink: 22px;
+    padding: 20px 25px;
+    border-radius: 0;
+    display: none;
+}
+
+.copyrights{
+    background: #000;
+    padding: 20px 60px;
+    color: #fff;
+}
+
+.links{
+    padding: 0 40px;
+    color: #fff;
+}
+
+.bottom-links{
+    color: #fff;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
